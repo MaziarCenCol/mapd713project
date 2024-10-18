@@ -1,0 +1,7 @@
+npm i
+npm install swagger-ui-express
+
+npm run dev
+
+http://localhost:5000/api-docs/
+
