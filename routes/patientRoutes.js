@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/patients:
+ * /api/patient/patients:
  *   get:
  *     summary: Fetch all patients
  *     description: Retrieves all patients from the database.
@@ -54,7 +54,7 @@ router.get("/patients", fetch);
 
 /**
  * @swagger
- * /api/patients/{id}:
+ * /api/patient/patients/{id}:
  *   get:
  *     summary: Fetch a patient by ID
  *     description: Retrieves a patient by their ID.
@@ -108,7 +108,7 @@ router.get("/patients/:id", fetchById);
 
 /**
  * @swagger
- * /api/patients:
+ * /api/patient/patients:
  *   post:
  *     summary: Create a new patient
  *     description: Adds a new patient to the database.
@@ -142,7 +142,7 @@ router.post("/patients", create);
 
 /**
  * @swagger
- * /api/patients/{id}:
+ * /api/patient/patients/{id}:
  *   put:
  *     summary: Update a patient's details
  *     description: Updates an existing patient's information.
@@ -183,7 +183,7 @@ router.put("/patients/:id", update);
 
 /**
  * @swagger
- * /api/patients/{id}:
+ * /api/patient/patients/{id}:
  *   delete:
  *     summary: Delete a patient
  *     description: Deletes a patient from the database.
