@@ -1,0 +1,14 @@
+name: Check Java and Node Versions
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  check-versions:
+    runs-on: ubumtu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Check Java version
+        run: node -v
